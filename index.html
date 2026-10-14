@@ -97,7 +97,7 @@
   <header>
     <div class="eyebrow">SaufApp</div>
     <h1>Datenschutzerklärung</h1>
-    <div class="updated">Stand: 1. September 2026</div>
+    <div class="updated">Stand: 14. Oktober 2026 (Version 1.1)</div>
   </header>
 
   <section>
@@ -127,15 +127,15 @@
       deinem Gerät gespeichert. Es findet keine Übertragung dieser Daten an den Entwickler oder an
       Dritte statt.
     </p>
-    <h3>Sprachausgabe (Text-to-Speech)</h3>
+    <h3>KI-Sprachausgabe (Text-to-Speech)</h3>
     <p>
-      Die App nutzt zur Sprachausgabe die Open-Source-Engine <strong>Sherpa-ONNX</strong> mit einem
-      Piper-Sprachmodell (Thorsten-Stimme, CC0-Lizenz). Die Sprachsynthese läuft vollständig lokal auf
-      deinem Gerät ab; die dabei vorgelesenen Texte verlassen dein Gerät nicht. Ist das Sprachmodell noch
-      nicht auf dem Gerät vorhanden, wird es einmalig über eine Internetverbindung heruntergeladen
-      (siehe Punkt 4). Als Rückfallebene kann die App die auf deinem Gerät bereits installierte
-      System-Sprachausgabe (<code>flutter_tts</code>) verwenden, sofern das Sprachmodell nicht
-      verfügbar ist.
+      Die Sprüche werden mit einer neuronalen KI-Stimme vorgelesen. Die App nutzt dafür die Open-Source-Engine
+      <strong>Sherpa-ONNX</strong> mit einem Piper-Sprachmodell (Stimme „Thorsten“, CC0-Lizenz). Die
+      Sprachsynthese läuft vollständig lokal auf deinem Gerät ab; die dabei vorgelesenen Texte verlassen dein
+      Gerät nicht. Ist das Sprachmodell noch nicht auf dem Gerät vorhanden, wird es einmalig über eine
+      Internetverbindung heruntergeladen (ca. 110 MB, siehe Punkt 4). Danach funktioniert die Sprachausgabe
+      auch ohne Internet. Als Rückfallebene kann die App die auf deinem Gerät bereits installierte
+      Systemstimme (<code>flutter_tts</code>) verwenden, sofern die KI-Stimme nicht verfügbar ist.
     </p>
   </section>
 
@@ -143,7 +143,7 @@
     <h2>4. Internetverbindung</h2>
     <p>
       Die App benötigt die Berechtigung <code>INTERNET</code> ausschließlich, um bei Bedarf das
-      Sprachmodell für die Sprachausgabe herunterzuladen. Bei diesem Download wird technisch bedingt
+      Sprachmodell für die KI-Stimme (ca. 110 MB) einmalig herunterzuladen. Bei diesem Download wird technisch bedingt
       deine IP-Adresse an den Server übermittelt, von dem das Sprachmodell bezogen wird. Diese
       Verarbeitung ist zur Bereitstellung der Funktion erforderlich (Art. 6 Abs. 1 lit. b bzw. f DSGVO)
       und dient keinem anderen Zweck. Es werden dabei keine weiteren personenbezogenen Daten erhoben
